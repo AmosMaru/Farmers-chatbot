@@ -2,18 +2,47 @@
 
 ## Introduction
 
-This repository contains the code for the Agri-mche chatbot, utilizing language models for question answering and a vector store for similarity search. The chatbot uses LangChain for natural language processing tasks.
+This repository contains the code for the Agri-mche chatbot, a conversational agent that leverages natural language processing and similarity search for agricultural advice. The chatbot utilizes advanced language models and vector stores for efficient question answering.
+
+## Technology Stack
+
+- **Programming Language:**
+  - Python
+
+- **Libraries and Frameworks:**
+  - [LangChain](https://github.com/NCATS-Tangerine/langchain): A library for natural language processing tasks.
+  - [FAISS](https://github.com/facebookresearch/faiss): A library for efficient similarity search.
+
+- **Machine Learning Models:**
+  - [GPT-4](https://www.openai.com/): A powerful language model by OpenAI for natural language understanding and generation.
+  - [LLAMA (Linguistic Learning with a Message-Adapting architecture)](https://llamallama.readthedocs.io/en/latest/): A library for embedding and similarity tasks.
+
+- **Vector Store:**
+  - [FAISS](https://github.com/facebookresearch/faiss): A library for similarity search and clustering of dense vectors.
+
+- **Environment Management:**
+  - [dotenv](https://github.com/theskumar/python-dotenv): A library for loading environment variables from a file.
+
+- **Version Control:**
+  - Git: Used for version control of the source code.
+
+- **Documentation:**
+  - Markdown: Used for writing documentation (e.g., README).
+
+- **Other Tools:**
+  - TextLoader: Part of LangChain, possibly used for loading text documents.
+  - StreamingStdOutCallbackHandler: A callback handler for streaming standard output in LangChain.
+
+- **APIs:**
+  - OpenAI API: Used for accessing the GPT-4 language model if the `MODEL_TYPE` is set to 'openai'.
 
 ## Prerequisites
 
-Before running the code, make sure you have the following dependencies installed:
-
-- Python (version 3.6 or higher)
-- [FAISS](https://github.com/facebookresearch/faiss) for efficient similarity search
-- [LangChain](https://github.com/NCATS-Tangerine/langchain) for natural language processing
-- [dotenv](https://github.com/theskumar/python-dotenv) for loading environment variables
+Before running the code, make sure you have the required dependencies installed. Check the [Setup](#setup) section for detailed instructions.
 
 ## Setup
+
+Follow these steps to set up the project:
 
 1. **Clone the repository:**
     ```bash
@@ -27,15 +56,7 @@ Before running the code, make sure you have the following dependencies installed
     ```
 
 3. **Create a `.env` file:**
-    Create a `.env` file in the project root and populate it with the necessary environment variables:
-
-    ```env
-    LLAMA_EMBEDDINGS_MODEL=/path/to/llama/model
-    MODEL_TYPE=openai  # or gpt4all depending on your configuration
-    MODEL_PATH=/path/to/gpt4all/model  # or specify the OpenAI API key if using OpenAI
-    MODEL_N_CTX= # Add the value for MODEL_N_CTX
-    OPEN_AI_API_KEY= # Add your OpenAI API key
-    ```
+    Create a `.env` file in the project root and populate it with the necessary environment variables. Refer to [`.env.sample`](.env.sample) for an example.
 
 4. **Load the FAISS index:**
     - Uncomment the relevant lines in the script to create and save the index initially.
