@@ -34,7 +34,7 @@ This repository contains the code for the Agri-mche chatbot, a conversational ag
   - StreamingStdOutCallbackHandler: A callback handler for streaming standard output in LangChain.
 
 - **APIs:**
-  - OpenAI API: Used for accessing the GPT-4 language model if the `MODEL_TYPE` is set to 'openai'.
+  - OpenAI API: Used for inplace of  the GPT-4 language model if the `MODEL_TYPE`.
 
 ## Prerequisites
 
