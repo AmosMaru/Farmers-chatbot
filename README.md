@@ -23,9 +23,6 @@ This repository contains the code for the Agri-mche chatbot, a conversational ag
 - **Environment Management:**
   - [dotenv](https://github.com/theskumar/python-dotenv): A library for loading environment variables from a file.
 
-- **Version Control:**
-  - Git: Used for version control of the source code.
-
 - **Documentation:**
   - Markdown: Used for writing documentation (e.g., README).
 
