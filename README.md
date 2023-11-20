@@ -46,8 +46,8 @@ Follow these steps to set up the project:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/agri-mche-chatbot.git
-    cd agri-mche-chatbot
+    git clone https://github.com/AmosMaru/Mche-chatbot.git
+    cd Mche-chatbot
     ```
 
 2. **Install dependencies:**
