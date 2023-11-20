@@ -1,0 +1,4 @@
+gpt4all==0.2.3
+langchain==0.0.142
+llama-cpp-python==0.1.48
+pyllamacpp==2.1.3
